@@ -514,63 +514,6 @@ MonoBehaviour:
     mipBias: 0
     varianceClampScale: 0.9
     contrastAdaptiveSharpening: 0
---- !u!1001 &782628375
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: bdf7e7c022cfa064f9ed561a85dd73d5, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 6.35386
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: bdf7e7c022cfa064f9ed561a85dd73d5, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.00000011920929
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: bdf7e7c022cfa064f9ed561a85dd73d5, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 2.1914062
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: bdf7e7c022cfa064f9ed561a85dd73d5, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: bdf7e7c022cfa064f9ed561a85dd73d5, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: bdf7e7c022cfa064f9ed561a85dd73d5, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: bdf7e7c022cfa064f9ed561a85dd73d5, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: bdf7e7c022cfa064f9ed561a85dd73d5, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: bdf7e7c022cfa064f9ed561a85dd73d5, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: bdf7e7c022cfa064f9ed561a85dd73d5, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: bdf7e7c022cfa064f9ed561a85dd73d5, type: 3}
-      propertyPath: m_Name
-      value: Knight_Black
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: bdf7e7c022cfa064f9ed561a85dd73d5, type: 3}
 --- !u!1 &1236285893
 GameObject:
   m_ObjectHideFlags: 0
@@ -765,6 +708,63 @@ MonoBehaviour:
   m_SerializedLibrary: {fileID: 11400000, guid: 57e82024248c24641aed30352dd9913b, type: 2}
   m_MaxNumberOfMovingImages: 0
   m_TrackedImagePrefab: {fileID: 0}
+--- !u!1001 &2743271245448537633
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8181569354751241666, guid: bade53375d1f00041ae7c041b57512d0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6.35386
+      objectReference: {fileID: 0}
+    - target: {fileID: 8181569354751241666, guid: bade53375d1f00041ae7c041b57512d0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.00000011920929
+      objectReference: {fileID: 0}
+    - target: {fileID: 8181569354751241666, guid: bade53375d1f00041ae7c041b57512d0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.1914062
+      objectReference: {fileID: 0}
+    - target: {fileID: 8181569354751241666, guid: bade53375d1f00041ae7c041b57512d0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8181569354751241666, guid: bade53375d1f00041ae7c041b57512d0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8181569354751241666, guid: bade53375d1f00041ae7c041b57512d0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8181569354751241666, guid: bade53375d1f00041ae7c041b57512d0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8181569354751241666, guid: bade53375d1f00041ae7c041b57512d0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8181569354751241666, guid: bade53375d1f00041ae7c041b57512d0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8181569354751241666, guid: bade53375d1f00041ae7c041b57512d0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8845374604082624376, guid: bade53375d1f00041ae7c041b57512d0, type: 3}
+      propertyPath: m_Name
+      value: Knight_Black
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bade53375d1f00041ae7c041b57512d0, type: 3}
 --- !u!1001 &7596409694900271760
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -829,5 +829,5 @@ SceneRoots:
   - {fileID: 705507995}
   - {fileID: 1236285896}
   - {fileID: 2119848364}
-  - {fileID: 782628375}
+  - {fileID: 2743271245448537633}
   - {fileID: 7596409694900271760}
