@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 848409ee8ba454f42a5ddff137688a27, type: 3}
+  m_Name: ReferenceImageLibraryMain
+  m_EditorClassIdentifier: 
+  m_GuidLow: 4922004470569416025
+  m_GuidHigh: 16847575791049355681
+  m_DataStore:
+    m_Storage: []
+  m_Images:
+  - m_SerializedGuid:
+      m_GuidLow: 4722918018892775677
+      m_GuidHigh: 8814675769372420010
+    m_SerializedTextureGuid:
+      m_GuidLow: 11170127027882349999
+      m_GuidHigh: 13305699254253429147
+    m_Size: {x: 1, y: 1.9165246}
+    m_SpecifySize: 1
+    m_Name: Sprint_McChristmas_Hat
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5558202149252393420
+      m_GuidHigh: 17650355668746976399
+    m_SerializedTextureGuid:
+      m_GuidLow: 15371917614211054667
+      m_GuidHigh: 8814437313844507979
+    m_Size: {x: 1, y: 1}
+    m_SpecifySize: 1
+    m_Name: vesper
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 4711575529589616014
+      m_GuidHigh: 12048875653183707039
+    m_SerializedTextureGuid:
+      m_GuidLow: 7859994637917777390
+      m_GuidHigh: 8351037299863737368
+    m_Size: {x: 1, y: 1}
+    m_SpecifySize: 1
+    m_Name: Badger
+    m_Texture: {fileID: 0}
