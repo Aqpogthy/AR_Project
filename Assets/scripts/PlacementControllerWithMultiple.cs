@@ -6,18 +6,18 @@ using UnityEngine.EventSystems;
 [RequireComponent(typeof(ARRaycastManager))]
 public class PlacementControllerWithMultiple : MonoBehaviour
 {
-    [SerializeField] private Button craigBtn;
-    [SerializeField] private Button patBtn;
-    [SerializeField] private Button patBtn2;
+    [SerializeField] private Button AppleBtn;
+    [SerializeField] private Button AppleTreeBtn;
+    [SerializeField] private Button TreeBtn;
     private GameObject placedPrefab;
     private ARRaycastManager arRaycastManager;
     private static List<ARRaycastHit> hits = new List<ARRaycastHit>();
     void Awake()
     {
-        arRaycastManager = GetComponent<ARRaycastManager>(); ChangePrefabTo("Craig");
-        craigBtn.onClick.AddListener(() => ChangePrefabTo("interactableObject"));
-        patBtn.onClick.AddListener(() => ChangePrefabTo("Tree"));
-        patBtn2.onClick.AddListener(() => ChangePrefabTo("Oak_Tree"));
+        arRaycastManager = GetComponent<ARRaycastManager>(); ChangePrefabTo("Apple");
+        AppleBtn.onClick.AddListener(() => ChangePrefabTo("Apple"));
+        AppleTreeBtn.onClick.AddListener(() => ChangePrefabTo("AppleTree"));
+        TreeBtn.onClick.AddListener(() => ChangePrefabTo("Tree"));
     }
     void Update()
     {
@@ -63,25 +63,29 @@ public class PlacementControllerWithMultiple : MonoBehaviour
         placedPrefab = Resources.Load<GameObject>($"prefabs/{prefabName}");
         if (placedPrefab == null)
         { Debug.LogError($"Prefab with name {prefabName} could not be loaded, make sure you check the naming of your prefabs..."); }
-        Color cc = craigBtn.image.color;
-        Color pc = patBtn.image.color;
-        Color pc2 = patBtn.image.color;
+        Color a = AppleBtn.image.color;
+        Color at = AppleTreeBtn.image.color;
+        Color t = TreeBtn.image.color;
         switch (prefabName)
         {
-            case "Craig":
-                cc.a = 1f;
-                pc.a = 0.5f;
-                pc2.a = 0.5f;
+            case "Apple":
+                a.a = 1f;
+                at.a = 0.5f;
+                t.a = 0.5f;
                 break;
-            case "Patrick":
-                pc.a = 1f;
-                cc.a = 0.5f;
-                pc2.a = 0.5f;
+            case "AppleTree":
+                a.a = 0.5f;
+                at.a = 1f;
+                t.a = 0.5f;
                 break;
-            
+            case "Tree":
+                a.a = 0.5f;
+                at.a = 0.5f;
+                t.a = 1f;
+                break;
         }
-        craigBtn.image.color = cc;
-        patBtn.image.color = pc;
-        patBtn2.image.color = pc2;
+        AppleBtn.image.color = a;
+        AppleTreeBtn.image.color = at;
+        TreeBtn.image.color = t;
     }
 }

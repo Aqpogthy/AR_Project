@@ -113,6 +113,7 @@ namespace UnityEngine.XR.ARFoundation.samples
                 switch (trackedImage.referenceImage.name)
                 {
                     case "vesper":
+                        print("this worked");
                         INY.SetActive(true);
                         break;
                     case "Sprint_McChristmas_Hat":
@@ -170,6 +171,7 @@ namespace UnityEngine.XR.ARFoundation.samples
 
             public override void OnInspectorGUI()
             {
+                base.OnInspectorGUI();
                 //customized inspector
                 var behaviour = serializedObject.targetObject as PrefabImagePairManager;
 
