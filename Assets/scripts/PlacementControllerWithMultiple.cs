@@ -8,6 +8,7 @@ public class PlacementControllerWithMultiple : MonoBehaviour
 {
     [SerializeField] private Button craigBtn;
     [SerializeField] private Button patBtn;
+    [SerializeField] private Button patBtn2;
     private GameObject placedPrefab;
     private ARRaycastManager arRaycastManager;
     private static List<ARRaycastHit> hits = new List<ARRaycastHit>();
@@ -16,6 +17,7 @@ public class PlacementControllerWithMultiple : MonoBehaviour
         arRaycastManager = GetComponent<ARRaycastManager>(); ChangePrefabTo("Craig");
         craigBtn.onClick.AddListener(() => ChangePrefabTo("interactableObject"));
         patBtn.onClick.AddListener(() => ChangePrefabTo("Tree"));
+        patBtn2.onClick.AddListener(() => ChangePrefabTo("Oak_Tree"));
     }
     void Update()
     {
@@ -63,19 +65,23 @@ public class PlacementControllerWithMultiple : MonoBehaviour
         { Debug.LogError($"Prefab with name {prefabName} could not be loaded, make sure you check the naming of your prefabs..."); }
         Color cc = craigBtn.image.color;
         Color pc = patBtn.image.color;
-
+        Color pc2 = patBtn.image.color;
         switch (prefabName)
         {
             case "Craig":
                 cc.a = 1f;
                 pc.a = 0.5f;
+                pc2.a = 0.5f;
                 break;
             case "Patrick":
                 pc.a = 1f;
                 cc.a = 0.5f;
+                pc2.a = 0.5f;
                 break;
+            
         }
         craigBtn.image.color = cc;
         patBtn.image.color = pc;
+        patBtn2.image.color = pc2;
     }
 }

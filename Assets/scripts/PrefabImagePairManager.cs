@@ -10,6 +10,8 @@ using UnityEngine.XR.ARFoundation;
 
 namespace UnityEngine.XR.ARFoundation.samples
 {
+    
+
     /// <summary>
     /// This component listens for images detected by the <c>XRImageTrackingSubsystem</c>
     /// and overlays some prefabs on top of the detected image.
@@ -17,6 +19,9 @@ namespace UnityEngine.XR.ARFoundation.samples
     [RequireComponent(typeof(ARTrackedImageManager))]
     public class PrefabImagePairManager : MonoBehaviour, ISerializationCallbackReceiver
     {
+        [SerializeField] public GameObject INY;
+        [SerializeField] public GameObject INL;
+        [SerializeField] public GameObject ING;
         /// <summary>
         /// Used to associate an `XRReferenceImage` with a Prefab by using the `XRReferenceImage`'s guid as a unique identifier for a particular reference image.
         /// </summary>
@@ -46,6 +51,7 @@ namespace UnityEngine.XR.ARFoundation.samples
         [Tooltip("Reference Image Library")]
         XRReferenceImageLibrary m_ImageLibrary;
 
+         
         /// <summary>
         /// Get the <c>XRReferenceImageLibrary</c>
         /// </summary>
@@ -102,7 +108,23 @@ namespace UnityEngine.XR.ARFoundation.samples
         void AssignPrefab(ARTrackedImage trackedImage)
         {
             if (m_PrefabsDictionary.TryGetValue(trackedImage.referenceImage.guid, out var prefab))
+            {
                 m_Instantiated[trackedImage.referenceImage.guid] = Instantiate(prefab, trackedImage.transform);
+                switch (trackedImage.referenceImage.name)
+                {
+                    case "vesper":
+                        INY.SetActive(true);
+                        break;
+                    case "Sprint_McChristmas_Hat":
+                        ING.SetActive(true);
+                        break;
+                    case "Badger":
+                        INL.SetActive(true);
+                        break;
+                }
+                
+            }
+            
         }
 
         public GameObject GetPrefabForReferenceImage(XRReferenceImage referenceImage)
