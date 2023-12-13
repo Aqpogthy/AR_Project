@@ -22,6 +22,9 @@ namespace UnityEngine.XR.ARFoundation.samples
         [SerializeField] public GameObject INY;
         [SerializeField] public GameObject INL;
         [SerializeField] public GameObject ING;
+        [SerializeField] public AudioSource src;
+        [SerializeField] public AudioClip YAY;
+        [SerializeField] public AudioClip COMP;
         /// <summary>
         /// Used to associate an `XRReferenceImage` with a Prefab by using the `XRReferenceImage`'s guid as a unique identifier for a particular reference image.
         /// </summary>
@@ -115,12 +118,18 @@ namespace UnityEngine.XR.ARFoundation.samples
                     case "vesper":
                         print("this worked");
                         INY.SetActive(true);
+                        src.clip = YAY;
+                        src.Play();
                         break;
                     case "Sprint_McChristmas_Hat":
                         ING.SetActive(true);
+                        src.clip = COMP;
+                        src.Play();
                         break;
                     case "Badger":
                         INL.SetActive(true);
+                        src.clip = YAY;
+                        src.Play();
                         break;
                 }
                 
